@@ -1,0 +1,11 @@
+.button {
+  background-color: $color-primary;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  width: fit-content;
+  &:hover {
+    cursor: pointer;
+  }
+  color: $color-ultimate-primary;
+}

@@ -1,0 +1,42 @@
+.dropdown {
+  position: relative;
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+    &-text {
+      color: $color-tertiary;
+    }
+    &-image {
+      width: 14px;
+      height: 14px;
+      &_active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__list {
+    flex-direction: column;
+    background-color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+  }
+  &__item {
+    padding: 5px 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__list_active {
+    display: flex;
+  }
+}

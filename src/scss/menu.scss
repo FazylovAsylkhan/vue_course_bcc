@@ -1,0 +1,17 @@
+.menu {
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+  &__link {
+    display: block;
+    color: $color-secondary;
+    padding: 14px 0 11px;
+  }
+  &__item {
+    border-bottom: 3px solid transparent;
+  }
+  &__item_active {
+    border-bottom: 3px solid $color-primary;
+  }
+}

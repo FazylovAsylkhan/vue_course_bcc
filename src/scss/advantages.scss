@@ -1,0 +1,35 @@
+.advantages {
+  &__items {
+    margin-top: 32px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__item {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 32px;
+    padding-bottom: 40px;
+  }
+  &__sublist {
+    margin-top: 12px;
+    height: 66px;
+  }
+  &__subitem {
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: 24px;
+    list-style-type: disc;
+  }
+  &__description {
+    margin-top: 12px;
+    height: 66px;
+  }
+  &__icon {
+    margin-top: 36px;
+  }
+  & > .container > .button {
+    margin: 36px auto 0;
+    display: block;
+  }
+}

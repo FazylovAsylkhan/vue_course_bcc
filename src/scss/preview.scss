@@ -1,0 +1,19 @@
+.preview {
+  padding: 20px 0;
+  height: 624px;
+  width: 100%;
+  background: url('../../image/preview-background.jpg') center / cover no-repeat;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__description {
+    margin-top: 12px;
+    font-size: 16px;
+    color: $color-default-primary;
+    line-height: 24px;
+  }
+  & > .container > &__inner > .button {
+    margin-top: 24px;
+  }
+}

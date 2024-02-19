@@ -1,0 +1,16 @@
+.header {
+  background-color: $color-ultimate-primary;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__link {
+    height: 30px;
+  }
+}

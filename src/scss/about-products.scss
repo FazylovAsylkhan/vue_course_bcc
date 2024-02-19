@@ -1,0 +1,33 @@
+.about-products {
+  &__items {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  &__item {
+    border-radius: 24px;
+    padding: 32px;
+  }
+  &__item:first-child {
+    background: url('../../image/about-products/background-1.jpg') center /
+      cover no-repeat;
+  }
+  &__item:last-child {
+    background: url('../../image/about-products/background-2.jpg') center /
+      cover no-repeat;
+  }
+  &__description {
+    margin-top: 12px;
+    padding-bottom: 36px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #111827;
+  }
+  &__link {
+    display: block;
+    margin-top: 140px;
+    background-color: #ffffff;
+    color: #1c1c1e;
+  }
+}

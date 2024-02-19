@@ -1,0 +1,106 @@
+.application {
+  &__inner {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 48px 200px;
+  }
+  &__form {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  &__input {
+    position: relative;
+    width: 100%;
+    padding: 16px 17px;
+    border-radius: 12px;
+    background-color: #f3f3f7;
+    color: #1c1c1e;
+    font-style: 16px;
+    line-height: 140%;
+    &::placeholder {
+      color: #676971;
+      font-style: 16px;
+      line-height: 140%;
+    }
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 50px #f3f3f7 inset;
+      -webkit-text-fill-color: #1c1c1e;
+    }
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: #1c1c1e;
+    }
+  }
+  &__input-wrapper {
+    position: relative;
+  }
+  &__input-wrapper:nth-child(1) > .dropdown {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 21px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  & .dropdown__list {
+    border: 1px solid rgba(#000000, 0.2);
+    left: initial;
+    right: 0;
+  }
+  & .dropdown__button-image {
+    width: 14px;
+    height: 8px;
+  }
+  &__input-wrapper:nth-child(4) {
+    & > input {
+      padding-top: 26px;
+    }
+  }
+  &__input-label {
+    z-index: 100;
+    position: absolute;
+    color: #676971;
+    font-size: 12px;
+    line-height: 150%;
+    top: 6px;
+    left: 16px;
+  }
+  &__checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #27ae60;
+    border-radius: 20%;
+    &_active::after {
+      content: '';
+      background: url('/svg/checkbox.svg') no-repeat;
+      position: absolute;
+      width: 13px;
+      height: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+  &__label {
+    display: flex;
+    gap: 10px;
+    font-style: 16px;
+    line-height: 24px;
+    color: #111827;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
